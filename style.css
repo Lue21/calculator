@@ -1,34 +1,31 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Gotham Rounded, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: normal;
   }
   
   body {
     padding: 0;
-    margin: 30px auto;
-    background: 
-    linear-gradient(217deg, rgba(255,0,0,.3), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(72, 255, 0, 0.5), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.3), rgba(0,0,255,0) 70.71%);
+    margin: 20px auto;
+    background: rgb(216, 216, 216);
+    
   }
   
   .calculator-grid {
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
     gap: 1px;
 
   }
   
   .calculator-grid > button {
     cursor: pointer;
-    font-size: 2rem;
-    color: rgba(29, 0, 43, 0.849);
-    border: 1px solid rgb(255, 255, 255);
+    font-size: 35px;
+    color: rgb(83, 83, 83);
+    border: 1px solid rgba(229, 255, 159, 0.884);
     outline: none;
     background-color: rgb(255, 255, 255);
     border-radius: 2px;
@@ -44,7 +41,7 @@
   
   .output {
     grid-column: 1 / -1;
-    background-color: rgba(16, 1, 44, 0.863);
+    background-color: rgba(25, 30, 77, 0.877);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -56,13 +53,12 @@
   }
   
   .output .previous-operand {
-    color: rgba(255, 255, 255, .75);
+    color: rgb(252, 252, 252);
     font-size: 1.5rem;
   }
   
   .output .current-operand {
-    color: white;
+    color: rgb(43, 255, 0);
     font-size: 2.5rem;
   }
 
-  
