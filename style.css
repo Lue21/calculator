@@ -6,9 +6,9 @@
   body {
     padding: 0;
     margin: 20px auto;
-    background: linear-gradient(217deg, rgba(255,0,0,.4), rgba(255,0,0,0) 70.71%),
-                linear-gradient(127deg, rgba(0,255,0,.4), rgba(0,255,0,0) 70.71%),
-                linear-gradient(336deg, rgba(0,0,255,.2), rgba(0,0,255,0) 70.71%);
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0, 110, 255, 0.8), rgba(16, 16, 129, 0) 70.71%);
   }
 
   .calc-grid {
@@ -59,7 +59,7 @@
   }
   
   .output .current-operand {
-    color: rgb(170, 255, 153);
+    color: rgb(255, 238, 0);
     font-size: 3rem;
   }
 
