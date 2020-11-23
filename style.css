@@ -6,14 +6,16 @@
   body {
     padding: 0;
     margin: 20px auto;
-    background: rgb(255, 255, 255);
-    
+    background: linear-gradient(217deg, rgba(255,0,0,.4), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.4), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.2), rgba(0,0,255,0) 70.71%);
   }
 
   .calc-grid {
     display: grid;
     justify-content: center;
     align-content: center;
+    min-height: 100vh;
     grid-template-columns: repeat(4, 80px);
     grid-template-rows: minmax(120px, auto) repeat(5, 80px);
     gap: 1px;
@@ -23,15 +25,15 @@
   .calc-grid > button {
     cursor: pointer;
     font-size: 35px;
-    color: rgb(83, 83, 83);
+    color: rgb(57, 56, 66);
     border: 1px solid rgba(255, 255, 255, 0.884);
     outline: none;
-    background-color: rgba(230, 230, 230, 0.575);
+    background-color: rgba(255, 255, 255, 0.932);
     border-radius: 2px;
   }
   
   .calc-grid > button:hover {
-    background-color: rgba(47, 233, 1, 0.9);
+    background-color: rgb(155, 255, 130);
   }
   
   .span-two {
@@ -40,7 +42,7 @@
   
   .output {
     grid-column: 1 / -1;
-    background-color: rgba(25, 30, 77, 0.877);
+    background-color: rgba(17, 20, 53, 0.932);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -57,7 +59,7 @@
   }
   
   .output .current-operand {
-    color: rgb(43, 255, 0);
+    color: rgb(170, 255, 153);
     font-size: 2.5rem;
   }
 
